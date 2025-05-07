@@ -1,0 +1,6 @@
+CREATE FUNCTION RemoveExclamationMarks(@str NVARCHAR(MAX))
+    RETURNS NVARCHAR(MAX)
+AS
+BEGIN
+RETURN REPLACE(@str, '!', '')
+END
